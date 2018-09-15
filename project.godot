@@ -14,6 +14,13 @@ config/name="BoxShooter"
 run/main_scene="res://Scenes/Game.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/test_width=1920
+window/size/test_height=1080
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
