@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Characters/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Assets/enemy.png" type="Texture" id=2]
@@ -8,6 +8,11 @@
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.03513, 3.20558 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
 
 [node name="Character" type="KinematicBody2D"]
 
@@ -54,5 +59,19 @@ show_behind_parent = true
 position = Vector2( 0, 20.1253 )
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
+
+[node name="Area" type="Area2D" parent="." index="5"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area" index="0"]
+
+shape = SubResource( 2 )
 
 
