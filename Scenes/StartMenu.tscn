@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/MenuAssets/HighScore.png" type="Texture" id=3]
 [ext_resource path="res://Assets/MenuAssets/ExitGame.png" type="Texture" id=4]
 
-[node name="StartMenu" type="MarginContainer" index="0"]
+[node name="StartMenu" type="MarginContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0
