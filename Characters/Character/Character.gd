@@ -2,8 +2,6 @@ extends KinematicBody2D
 
 export var SPEED = 200
 
-enum { TYPE_PLAYER = 0, TYPE_ENEMY = 0 }
-
 var direction = Vector2()
 
 func _ready():
